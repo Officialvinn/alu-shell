@@ -1,0 +1,5 @@
+#!/bin/bash
+# This script displays all files in the current directory, including hidden ones, in long format
+
+ls -la
+
