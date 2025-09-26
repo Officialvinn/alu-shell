@@ -1,0 +1,5 @@
+#!/bin/bash 
+#This displays the current working directory files in long format
+
+ls -l
+
