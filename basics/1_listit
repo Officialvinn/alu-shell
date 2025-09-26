@@ -1,0 +1,5 @@
+#!/bin/bash
+#This displays the contents of cureent working directory
+
+ls
+
