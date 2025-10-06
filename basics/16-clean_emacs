@@ -1,0 +1,16 @@
+#!/bin/bash
+# This script deletes all files in the current directory ending with ~
+
+# Enable nullglob so the pattern expands to nothing if no match
+shopt -s nullglob
+backup_files=(~*)
+
+# Check if there are any matching files
+if [ ${#backup_files[@]} -eq 0 ]; then
+    echo "No backup files ending with ~ found."
+else
+    for file in "${backup_files[@]}"; do
+        rm "$file"
+        echo "Deleted $file"
+    done
+fi
