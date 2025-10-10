@@ -1,0 +1,2 @@
+#!/bin/bash
+msg=""; while IFS= read -r line; do msg+="${line:0:1}"; done; printf "%s\n" "$msg"
