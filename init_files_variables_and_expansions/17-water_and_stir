@@ -1,0 +1,2 @@
+#!/bin/bash
+n=$(( ${WATER//e/0}${WATER//w/1}${WATER//a/2}${WATER//t/3}${WATER//r/4} + ${STIR//t/0}${STIR//i/1}${STIR//./2}${STIR//r/3} )); printf "%s\n" "${n//0/s}${n//1/h}${n//2/t}${n//3/b}${n//4/e}${n//5/o}${n//6/l}${n//7/c}${n//8/h}"
