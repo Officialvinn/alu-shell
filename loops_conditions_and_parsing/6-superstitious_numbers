@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This is while and case
+# This is a while and case loop
 i=1
 while [ $i -le 20 ]; do
   case $i in
