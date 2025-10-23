@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Script to print "To infinity and beyond" indefinitely
-
+# This script displays a statement indefinitely
 while true; do
     echo "To infinity and beyond"
-    sleep 1  # Pause for 1 second between iterations
+    sleep 2
 done
