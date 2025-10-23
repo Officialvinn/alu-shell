@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Script to stop 4-to_infinity_and_beyond without using kill
+
+# Find the PID(s) of the process
+pid=$(pgrep -f 4-to_infinity_and_beyond)
+
+# If PID exists, use fuser to terminate it
+if [ -n "$pid" ]; then
+    # Send SIGTERM to the process
+    fuser -TERM /proc/"$pid" >/dev/null 2>&1
+fi
