@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script to display Bash processes with hierarchy
+
+# shellcheck disable=SC2009
+
+# Display all processes and filter for "bash"
+ps -ef --forest | grep bash
